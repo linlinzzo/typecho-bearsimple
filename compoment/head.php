@@ -301,7 +301,8 @@ switch(Bsoptions('IframeProtect')){
 </script>
 <script src="<?php AssetsDir();?>assets/js/modules/darkmode.js"></script>
  </head>
- <body <?php if(Bsoptions('CopyProtect') == true) :?>oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false'<?php endif; ?>>
+ <body <?php if(Bsoptions('CopyProtect') == true) :?>oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' <?php endif; ?>
+       <?php if(Bsoptions('DNSYJX') == true) :?>data-instant-allow-external-links<?php endif; ?>>
      <?php if(Bsoptions('Read_Process') == true) :?>
  
 <div class="read_progress">
